@@ -1,0 +1,28 @@
+{
+  "name": "button-by-juhi-lasod",
+  "version": "1.0.0",
+  "description": "custon button animations",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist --copy-files",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JuhiLasod/button-by-juhi-lasod.git"
+  },
+  "author": "Juhi Lasod",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.27.2",
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-react": "^7.27.1",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24"
+  },
+  
+  "peerDependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
