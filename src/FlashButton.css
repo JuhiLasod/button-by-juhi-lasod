@@ -1,15 +1,38 @@
 .fancy-button {
-    background: linear-gradient(to right, #ff6a00, #ee0979);
-    color: white;
+    background: linear-gradient(to top, #727272, #ffffff);
+    /* color: white; */
     border: none;
     padding: 10px 20px;
     font-size: 1rem;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
+    animation:  textinbtn 3s infinite alternate, sizePulse 3s infinite alternate;
   }
-  
+  @keyframes sizePulse {
+    from {
+      transform: scale(0.9);
+      box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    }
+    to {
+      transform: scale(1.1);
+      box-shadow: 0 0 15px rgba(0,0,0,0.7);
+
+    }
+  }
+  @keyframes textinbtn {
+    from{
+        color: #ffffff;
+    }
+    to{
+        color: rgb(0, 0, 0);
+    }
+  }
   .fancy-button:hover {
     transform: scale(1.1);
+    animation: none;
+    background: #706e6e;
+    color: #ffffff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
   }
   
